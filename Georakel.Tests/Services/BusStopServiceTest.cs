@@ -2,15 +2,14 @@
 using System.IO;
 using System.Linq;
 using Georakel.Core.Domain;
-using NUnit.Framework;
 using System.Xml;
+using NUnit.Framework;
 
 namespace Georakel.Core.Tests
 {
 	[TestFixture]
 	public class BusStopServiceTest
 	{
-		BusStopService Service;
 
 		[Test]
 		public void Parses_bus_stops ()
@@ -19,7 +18,7 @@ namespace Georakel.Core.Tests
 
 			BusStop firstStop = service.BusStops.First();
 
-			Assert.AreEqual(firstStop, new BusStop("Risvollvegen", "63.3945372", "10.4236422"));
+			Assert.AreEqual(firstStop, new BusStop("Risvollvegen", 63.3945372, 10.4236422));
 		}
 
 	}

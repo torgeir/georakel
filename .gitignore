@@ -1,3 +1,4 @@
-bin/
+bin
 obj
 .DS_Store
+Georakel.Core/bin

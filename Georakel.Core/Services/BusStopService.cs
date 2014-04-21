@@ -11,25 +11,7 @@ namespace Georakel.Core
 {
 	public class BusStopService
 	{
-		private IEnumerable<BusStop> ParseBusStops ()
-		{
-			using(var reader = XmlReader)
-			{
-				var xml = XDocument.Load(reader);
-
-				return new List<BusStop>(
-					from osm in xml.Elements("osm")
-					from node in osm.Elements("node")
-					from tag in node.Elements("tag")
-					    where tag.Attribute("k").Value == "name"
-							let name = tag.Attribute("v").Value
-							let lat = node.Attribute("lat").Value
-							let lon = node.Attribute("lon").Value
-								select new BusStop(name, lat, lon));
-			}
-		}
-
-		
+			
 		public IEnumerable<BusStop> BusStops {
 			get
 			{
@@ -41,6 +23,31 @@ namespace Georakel.Core
 			}
 		}
 
+		public BusStop FindBusStopWithName (string Name)
+		{
+			return BusStops
+				.Where(stop => stop.Name.Equals(Name))
+				.First();
+		}
+
+		private IEnumerable<BusStop> ParseBusStops ()
+		{
+			using(var reader = XmlReader)
+			{
+				var xml = XDocument.Load(reader);
+
+				return new List<BusStop>(
+					from osm in xml.Elements("osm")
+					from node in osm.Elements("node")
+					from tag in node.Elements("tag")
+						where tag.Attribute("k").Value == "name"
+							let name = tag.Attribute("v").Value
+							let lat = node.Attribute("lat").Value
+							let lon = node.Attribute("lon").Value
+								select new BusStop(name, lat, lon));
+			}
+		}
+
 		IEnumerable<BusStop> _busStops;
 
 		XmlReader XmlReader;
@@ -49,7 +56,6 @@ namespace Georakel.Core
 		{
 			this.XmlReader = xmlReader;
 		}
-
 	}
 
 }

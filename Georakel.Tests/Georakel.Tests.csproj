@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D91857E8-A3FF-495B-ADA5-500D6EC1194F}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -31,8 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="nunit.framework, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" />
     <Reference Include="System.Xml" />
+    <Reference Include="nunit.framework">
+      <HintPath>Lib\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -47,5 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Lib\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lib\NUnit.2.6.3\NUnit.2.6.3.nupkg" />
+    <None Include="Lib\NUnit.2.6.3\license.txt" />
+    <None Include="Lib\NUnit.2.6.3\lib\nunit.framework.dll" />
+    <None Include="Lib\NUnit.2.6.3\lib\nunit.framework.xml" />
   </ItemGroup>
 </Project>

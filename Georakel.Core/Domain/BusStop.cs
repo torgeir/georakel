@@ -6,16 +6,19 @@ namespace Georakel.Core.Domain
 	{
 		public string Name { get; private set; }
 
-		public string Lat { get; private set; }
+		public double Lat { get; private set; }
 
-		public string Lon { get; private set; }
+		public double Lon { get; private set; }
 
-		public BusStop (String Name, String Lat, String Lon)
+		public BusStop (string Name, double Lat, double Lon)
 		{
 			this.Name = Name;
 			this.Lat = Lat;
 			this.Lon = Lon;
 		}
+
+		public BusStop (string Name, string Lat, string Lon) :
+			this(Name, Convert.ToDouble(Lat), Convert.ToDouble(Lon)) { }
 
 		public override string ToString ()
 		{

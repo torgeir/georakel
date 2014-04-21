@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using Georakel.Core;
+using TinyMessenger;
 
 namespace Georakel
 {
@@ -28,13 +30,16 @@ namespace Georakel
 			// create a new window instance based on the screen size
 			window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-			var askController = new AskViewController();
-			var mapController = new MapViewController();
+			var messenger = new TinyMessengerHub();
+
+			var busStopService = new BusStopService(XmlReader.Create("busstops.xml"));
+			var oracleService = new OracleService();
+
+			var mapController = new MapViewController(messenger, busStopService);
+			var oracleController = new OracleViewController(messenger, oracleService);
+
 			tabBarController = new UITabBarController();
-			tabBarController.ViewControllers = new UIViewController [] {
-				askController,
-				mapController,
-			};
+			tabBarController.ViewControllers = new UIViewController [] { mapController, oracleController };
 			
 			window.RootViewController = tabBarController;
 			window.MakeKeyAndVisible();
