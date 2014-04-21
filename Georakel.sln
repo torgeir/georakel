@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Georakel", "Georakel.csproj", "{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Georakel.Core", "Georakel.Core\Georakel.Core.csproj", "{6A357A38-2861-4AE5-A6FE-9843F708DC27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Georakel.Tests", "Georakel.Tests\Georakel.Tests.csproj", "{D91857E8-A3FF-495B-ADA5-500D6EC1194F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.Release|iPhone.Build.0 = Release|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{6A357A38-2861-4AE5-A6FE-9843F708DC27}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.Debug|iPhone.Build.0 = Debug|iPhone
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.Release|iPhone.ActiveCfg = Release|iPhone
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.Release|iPhone.Build.0 = Release|iPhone
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{BDDD1FB7-02A7-48CA-A3C6-BCCD558B2DE0}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.Release|iPhone.Build.0 = Release|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{D91857E8-A3FF-495B-ADA5-500D6EC1194F}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Georakel.csproj
+	EndGlobalSection
+EndGlobal
